@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.forms.HelloController" spacing="20" alignment="CENTER">
+    <VBox spacing="10" alignment="TOP_LEFT" prefWidth="300">
+        <children>
+            <Label text="FullName:" />
+            <TextField fx:id="fullNameField" promptText="Enter Full Name" />
+            <Label text="ID:" />
+            <TextField fx:id="idField" promptText="Enter ID" />
+            <Label text="Gender:" />
+            <TextField fx:id="genderField" promptText="Enter Gender (Male/Female)" />
+            <Label text="HomeProvince:" />
+            <TextField fx:id="provinceField" promptText="Enter Home Province" />
+            <Label text="DOB:" />
+            <TextField fx:id="dobField" promptText="Enter DOB (YYYY-MM-DD)" />
+        </children>
+    </VBox>
+
+    <VBox spacing="10" alignment="CENTER">
+        <children>
+            <Button text="New" onAction="#saveRecord" />
+            <Button text="Delete" onAction="#deleteRecord" />
+            <Button text="Restore" onAction="#restoreRecord" />
+            <Button text="Find" onAction="#findRecord" />
+            <Button text="Close" onAction="#closeApp" />
+        </children>
+    </VBox>
+</HBox>
